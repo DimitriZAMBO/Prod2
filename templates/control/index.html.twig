@@ -1,0 +1,374 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ControlController!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 0em auto; max-width: 800px; width: 100%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+        body{
+            background-color: #0c0b09;
+        }
+    </style>
+
+    <div class="container-fluid">
+        {#    <h1>Hello {{ controller_name }}! ✅</h1>#}
+        {#    <img alt="Hiro" src="{{ asset('Hiro.jpg') }}">#}
+
+        {#    This friendly message is coming from:#}
+        {#    <ul>#}
+        {#        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/Prod/src/Controller/ControlController.php'|file_link(0) }}">src/Controller/ControlController.php</a></code></li>#}
+        {#        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/Prod/templates/control/index.html.twig'|file_link(0) }}">templates/control/index.html.twig</a></code></li>#}
+        {#    </ul>#}
+        {#    <br/>#}
+        {#    <h1 style="background-color: #; text-align: center; height: 100%; size: 14px; border-radius: 15px"> Bienvenue sur le site officiel de la "bd family business prod"! </h1>#}
+
+
+        {#        <h1>Carrousel</h1>#}
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{ asset('Stud2.jpg') }}" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('Stud4.jpg') }}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('St3.jpg') }}" alt="Third slide">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                </div>
+                <br/>
+                <h2 style="font-family: 'PT Serif', serif; color: white; margin: 0; font-size: 36px; font-weight: 700; font-family:Playfair Display,serif; color: #cda45e;"> Nouveautés </h2><br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="font-family: 'PT Serif', serif; color: white;">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4> <strong>Hiro</strong> en featuring avec <strong>Lynda</strong> sur le titre "trop tard" !! </h4>
+                <p style="color: white;"><em>youtube:</em> <a  href="https://www.youtube.com/watch?v=V222UjrfRFQ">https://www.youtube.com/watch?v=V222UjrfRFQ</a> </p>
+                <p> REALISATEUR : Directed By Shelis pour Polymath Production <br/>
+                    <br/>
+                    Production: <br/>
+                    Danielle Ekoule<br/>
+                    Borhane Mallek<br/>
+                    <br/>
+                    Régisseur:<br/>
+                    Jyess Blessy
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ asset('hiroETlynda.jpg') }}" style="text-align: center; margin: 5px; width: 100%; border: 10px solid #cda45e";">
+            </div>
+        </div>
+    </div>
+    <br/>
+    </div>
+
+    <br/>
+    <br/>
+    <div class="container" style="font-family: 'PT Serif', serif; color: white;">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4> Décès d'une <strong>légende</strong> , <strong>Jacob Desvarieux</strong> s'en est aller !! </h4>
+                <p style="color: white;"><em>youtube:: France 24:</em> <a  href="https://www.youtube.com/watch?v=lQLC6ojN2WM">https://www.youtube.com/watch?v=lQLC6ojN2WM</a> </p>
+                <p> Né le 21 novembre 1955 à Paris et mort le 30 juillet 2021 à Pointe-à-Pitre, est un chanteur, musicien, arrangeur et producteur français.<br/>
+                    <br/>
+
+                </p>
+                <p>
+                    Sa mère, qui voyageait beaucoup, l'emmène en Guadeloupe, à l'âge de 3 mois. Il vit pendant 10 ans entre la Guadeloupe et la Martinique. Il part ensuite au Sénégal où il vit jusqu'à l'âge de douze ans. Sa mère lui offre sa première guitare, alors qu'il a dix ans. La musique occupe une grande place dans sa vie et dès l'âge de seize ans, il devient arrangeur. Avec ses amis : Francis Cauletin, Phillippe Drai, Christophe Zadire et Achille Ango à Marseille, il fonde un groupe de rock The Bad Grass, puis pour des raisons plus commerciales, Sweet Bananas. Ils enregistrent le titre Bilboa dance, pour être le générique d'une émission matinale de jeu sur RMC, ensuite membre du groupe Ozila.<br/>
+                    De retour à Paris, à l'époque du disco, Jacob Desvarieux rencontre Pierre-Édouard Décimus. Ensemble, ils fondent en 1979 le groupe antillais Kassav' et a largement contribué au développement et au rayonnement du groupe, au niveau international.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ asset('JacobDesvarieux.jpg') }}" style="text-align: center; margin: 5px; width: 100%; border: 10px solid #cda45e";">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ======= Pourquoi nous ======= -->
+    <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Pourquoi nous ?</h2>
+                <p>Nous sommes la reférence en terme de management & de production!</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                        <span>01</span>
+                        <h4>Expertise</h4>
+                        <p>Chaque personnel de notre entreprise à un profil exceptionnel.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                        <span>02</span>
+                        <h4>Convivialité</h4>
+                        <p>Nous faisons parti de vos fans, à cet effet nous priorisons votre confort.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                        <span>03</span>
+                        <h4> Confidentialité </h4>
+                        <p>La sécurité et la difficulté d'accès à nos ressources est ce qui fait de nous un leader.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
+
+    <section id="pepites" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Nos pepites</h2>
+                <p>Consulter notre volet de Stars</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+{#                    <ul id="menu-flters">#}
+{#                        <li data-filter="*" class="filter-active">Tous</li>#}
+{#                        <li data-filter=".filter-starters">Afro love men</li>#}
+{#                        <li data-filter=".filter-salads">RAP</li>#}
+{#                        <li data-filter=".filter-specialty">Afro love women</li>#}
+{#                    </ul>#}
+                </div>
+            </div>
+
+            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="{{ asset('Hiro.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Hiro</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        De son vrai nom Dimitri Nganda, est un chanteur et rappeur français né le 14 juillet 1991 en France originaire de la République démocratique du Congo.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="{{ asset('LaFouine2.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>La Fouine</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        De son vrai nom Laouni Mouhid, né le 25 décembre 1981 à Trappes, dans les Yvelines, est un rappeur franco-marocain.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="{{ asset('Damso.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Damso</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        De son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa, est un rappeur et auteur-compositeur-interprète belgo-congolais.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-speciality">
+                    <img src="{{ asset('AyaNakamura.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Aya Nakamura</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Née le 10 mai 1995 à Bamako, est une auteure-compositrice-interprète malienne.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="{{ asset('Youssoupha.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Youssoupha</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        De son nom complet Youssoupha Mabiki Zola, né le 29 août 1979 à Kinshasa, au Zaïre, est un rappeur français.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="{{ asset('Joe.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Joe Dwet File</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Chanteur, auteur-compositeur et ingénieur du son d'origine haïtienne.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="{{ asset('TayC.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Tay-C</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        De son vrai nom Julien Bouadjie, né le 2 mai 1996 à Marseille, dans les Bouches-du-Rhône, de parents Camerounais, est auteur-compositeur-interprète français.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-speciality">
+                    <img src="{{ asset('Ronisia.jpg') }}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#"></a><span>Ronisia</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        De son vrai nom Ronisia Mendes est une jeune artiste évoluant dans l'univers de la pop urbaine. D'origine Cap Verdienne, elle est née dans les années 2000 et a grandi dans le 91 où elle entame des études de sociologie.
+                    </div>
+                </div>
+
+{#                <div class="col-lg-6 menu-item filter-specialty">#}
+{#                    <img src="{{ asset('DjanyIMG.jpg') }}" class="menu-img" alt="">#}
+{#                    <div class="menu-content">#}
+{#                        <a href="#"></a><span>Djany</span>#}
+{#                    </div>#}
+{#                    <div class="menu-ingredients">#}
+{#                        Métisse franco-congolaise, Djany chante depuis l'âge de cinq ans dans le sillage d'une mère chanteuse de gospel.#}
+{#                    </div>#}
+{#                </div>#}
+
+            </div>
+
+        </div>
+    </section><!-- Fin de nos pépites -->
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Propos</h2>
+            <p>Mots des dirigeants</p>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <p style="color: white">
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Relation humaine, confiance, indépendance, voilà les maîtres mots qui ont présidé à la création de cette maison de production. La technique n'est rien si elle n'est pas au service de l'homme. Notre fierté, c'est de pouvoir partager une réussite, nos conseils ont permis à plusieurs d'aller plus vite, plus loin, plus haut. Notre équipe d'hommes et de femmes, de jeunes et de moins jeunes l'a bien compris et démultiplie aujourd'hui toutes ses richesses et ses complémentarités au service de l'Artiste dans le respect des valeurs et de l'esprit « bd EMPIRE ».
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="{{ asset('Dimitri_Zambo.jpg') }}" class="testimonial-img" alt="">
+                        <h3>Dimitri ZAMBO</h3>
+                        <h4>DG &amp; Fondateur</h4>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <p style="color: white">
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Après 2 années d’existence, nous sommes conscients de l’importance de créer de la valeur qui résiste à l’épreuve du temps. Nous avons la conviction que même de bonnes performances financières n’ont de sens que si elles ne sont pas réalisées au détriment de la construction d’une société durable. Voilà pourquoi nous sommes engagés à créer de la valeur durable sur le long terme en soutenant des initiatives humaines, sociales, environnementales, entrepreneuriales, en ce sens.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="{{ asset('Chrales.jpg') }}" class="testimonial-img" alt="">
+                        <h3>Charles TABU</h3>
+                        <h4>Co-fondateur</h4>
+                    </div>
+                </div><!-- End testimonial item -->
+
+    <section id="gallery" class="gallery">
+
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Galerie</h2>
+                <p>Quelques photos de notre entreprise</p>
+            </div>
+        </div>
+
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row g-0">
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Local3.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Local3.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Local1.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Local1.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Local2.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Local2.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Studio7.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Studio7.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Studio6.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Studio6.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Studio4.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Studio4.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Studio5.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Studio5.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{{ asset('Local4.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="{{ asset('Local4.jpg') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Gallery Section -->
+{% endblock %}

@@ -1,19 +1,231 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+<html lang="en">
+<head>
+    <title>{%block title %}Prod{%endblock%}</title>
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+
+    <!--Template-->
+    <meta charset="utf-8">
+
+    <!--link rel="stylesheet" href="{{ asset('css/style.css') }}"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>bd EMPIRE</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ asset('Royaute.jpg') }}" rel="icon">
+    <link href="{{ asset('Royaute.jpg') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Google Fonts Dimitri-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Restaurantly - v3.3.0
+    * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+
+
+
+    <!--End template-->
+
+    {% block stylesheet %}
+        {#{{encore_entry_link_tags('app')}}#}
+    {% endblock %}
+
+    {% block script %}
+        {#{{encore_entry_script_tags('app')}}#}
+    {% endblock %}
+</head>
+<body>
+{#<div id="topbar" class="d-flex align-items-center fixed-top">#}
+{#    <div class="container d-flex justify-content-center justify-content-md-between">#}
+
+{#        <div class="contact-info d-flex align-items-center">#}
+{#            <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>#}
+{#            <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>#}
+{#        </div>#}
+
+{#        <div class="languages d-none d-md-flex align-items-center">#}
+{#            <ul>#}
+{#                <li>En</li>#}
+{#                <li><a href="#">De</a></li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+<noscript>
+    <h4 style="text-align: center">Activez le javascript pour une navigation optimale!</h4>
+</noscript>
+
+<!--<h3>Projet test</h3>-->
+<!--
+<nav class="navbar navbar-expand-sm bg-info navbar-light" style="width: 100%">
+</nav>
+-->
+<div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-phone d-flex align-items-center"><span>+33 686 682 930</span></i>
+            <i class="bi bi-clock d-flex align-items-center ms-4"><span> Lun-Sam: 10H - 17H</span></i>
+        </div>
+
+        <div class="languages d-none d-md-flex align-items-center">
+            <ul>
+                <li>Fr</li>
+                <li><a href="#">En</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<header id="header" class="fixed-top d-flex align-items-center" >
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+        <h1 class="logo me-auto me-lg-0"><a href="{{ path('control') }}"><img src="{{ asset('logo_small.png') }}"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar navbar-expand-sm order-last order-lg-0">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link scrollto active" href="{{ path('app_login') }}">Connexion <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link scrollto active" href="{{ path('app_logout') }}">Déconnexion <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link scrollto active" href="{{ path('artiste_index') }}">Nos artistes <span class="sr-only">(current)</span></a></li>
+{#                <li><a class="nav-link scrollto active" href="{{ path('instruments_index') }}">Nos équipements <span class="sr-only">(current)</span></a></li>#}
+                <li class="nav-item"><a class="nav-link scrollto active" href="{{ path('pays_index') }}">Pays de déploiement <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link scrollto active" href="{{ path('app_register') }}">S'inscrire</a></li>
+                <li class="dropdown-menu"><a href="#"><span>En savoir plus</span> <i class="bi bi-chevron-down" ></i></a>
+                    <ul >
+                        <li><a href="#"></a></li>
+                        <li class="dropdown"><a href="#"><span>Actualités</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Signature de HIRO avec la bd family business prod</a></li>
+                                <li><a href="#">Tournée de Koffi Olomidé</a></li>
+                                {#                            <li><a href="#">Deep Drop Down 3</a></li>#}
+                                {#                            <li><a href="#">Deep Drop Down 4</a></li>#}
+                                {#                            <li><a href="#">Deep Drop Down 5</a></li>#}
+                            </ul>
+                        </li>
+                        <li style="position: relative;"><a href="#">Phonogrammes</a></li>
+                        {#                    <li><a href="#">Drop Down 3</a></li>#}
+                        {#                    <li><a href="#">Drop Down 4</a></li>#}
+                    </ul>
+                </li>
+{#                <li><a class="nav-link scrollto active" href="{{ path('contact') }}">Contact<span class="sr-only">(current)</span></a></li>#}
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+        <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Concours</a>
+
+    </div>
+</header>
+{% block body %}
+
+{% endblock %}
+
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                        <h3>bd EMPIRE</h3>
+                        <p>
+                            10 rue de Picardie <br>
+                            535022, FR<br><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> lexus@empire.fr<br>
+                        </p>
+                        {#                        <div class="social-links mt-3">#}
+                        {#                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>#}
+                        {#                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>#}
+                        {#                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>#}
+                        {#                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>#}
+                        {#                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>#}
+                        {#                        </div>#}
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Management artistique</a></li>
+                        {#                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>#}
+                        {#                        <li><i class="bx bx-chevron-right"></i> <a href="#">Développemebt web</a></li>#}
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing digital & communication</a></li>
+                        {#                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>#}
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Production cinématographique</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Royalties & copyright</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Notre dévise</h4>
+                    <p>Encadrement - Succès - Loyauté => Vous faire passer de zéro à héros.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>bd EMPIRE</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+            Designed by <a href="#">bd family business prod</a>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
+
+
+
+
